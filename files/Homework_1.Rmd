@@ -18,16 +18,8 @@ In this competition, you will predict how popular an apartment rental listing is
 
 3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
 
-This is an early Exploratory Data Analysis for the Personalized Medicine: Redefining Cancer Treatment challenge. I will be using ggplot2 and the tidyverse tools to study and visualise the structures in the data.
-We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (so-called drivers) in the presence of mutations that are don’t affect the tumors (passengers).
-
-The data comes in 4 different files. Two csv files and two text files:
-
-training/test variants: These are csv catalogues of the gene mutations together with the target value Class, which is the (manually) classified assessment of the mutation. The feature variables are Gene, the specific gene where the mutation took place, and Variation, the nature of the mutation. The test data of course doesn’t have the Class values. This is what we have to predict. These two files each are linked through an ID variable to another file each, namely
-
-training/test text: Those contain an extensive description of the evidence that was used (by experts) to manually label the mutation classes.
-
-The text information holds the key to the classification problem and will have to be understood/modelled well to achieve a useful accuracy.
+This is an early Exploratory Data Analysis for the Personalized Medicine, Redefining Cancer Treatment challenge. I will be using ggplot2 and the tidyverse tools to study and visualise the structures in the data.
+We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (socalled drivers) in the presence of mutations that are dont affect the tumors (passengers).
 
 
 4)[Countries the most mentioned by Hillary](https://www.kaggle.com/ampaho/countries-the-most-mentioned-by-hillary/code)
@@ -35,12 +27,9 @@ The text information holds the key to the classification problem and will have t
 About this Dataset
 Throughout 2015, Hillary Clinton has been embroiled in controversy over the use of personal email accounts on non-government servers during her time as the United States Secretary of State. Some political experts and opponents maintain that Clinton use of personal email accounts to conduct Secretary of State affairs is in violation of protocols and federal laws that ensure appropriate recordkeeping of government activity. Hillary campaign has provided their own four sentence summary of her email use here.
 
-There have been a number of Freedom of Information lawsuits filed over the State Department failure to fully release the emails sent and received on Clinton private accounts. On Monday, August 31, the State Department released nearly 7,000 pages of Clinton heavily redacted emails (its biggest release of emails to date).
 
 
 5)[Exploratory Analysis - NYC Taxi Trip](https://www.kaggle.com/wti200/exploratory-analysis-nyc-taxi-trip)
 
 This is an Exploratory Data Analysis for the NYC Taxi Ride Duration competition.
-In this competition, NYC Taxi and Limousine Commission is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset includes pickup time, geo-coordinates, number of passengers, and several other variables.
-
-The data comes in the shape of 1.5 million training observations and 63k test observation. Where each row contains one taxi trip.
+In this competition, NYC Taxi and Limousine Commission is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset includes pickup time, geocoordinates, number of passengers, and several other variables.
