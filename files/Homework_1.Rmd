@@ -20,7 +20,7 @@ The target variable, interest_level, is defined by the number of inquiries a lis
 3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
 
 This is an early Exploratory Data Analysis for the Personalized Medicine: Redefining Cancer Treatment challenge. I will be using ggplot2 and the tidyverse tools to study and visualise the structures in the data.
-We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (so-called “drivers”) in the presence of mutations that are don’t affect the tumors (“passengers”).
+We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (so-called drivers) in the presence of mutations that are don’t affect the tumors (passengers).
 
 The data comes in 4 different files. Two csv files and two text files:
 
