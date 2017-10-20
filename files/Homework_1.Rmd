@@ -3,30 +3,23 @@ title: "Interesting R Examples"
 author: Gokhan Sahin - BDA 503 - Fall 2017
 ---
 
-```{r,echo=FALSE,results="hide"}
-library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
-```
-###1)[HR analytics](https://www.kaggle.com/ludobenistant/hr-analytics-1/code)
+
+1)[HR analytics](https://www.kaggle.com/ludobenistant/hr-analytics-1/code)
+
  Our example concerns a big company that wants to understand why some of their best and most experienced employees are leaving prematurely. The company also wishes to predict which valuable employees will leave next.
 At this stage we want to understand the data that compose our Analytical Base Table (ABT) and assess where the quality of it might suffer.
 
-```{r,echo=FALSE,eval=FALSE}
-rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="pdf_document")
-rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="html_document")
-```
 
 
-###2)[Rental Listing NY Map](https://www.kaggle.com/enrique1500/rental-listing-ny-map/notebook) 
+2)[Rental Listing NY Map](https://www.kaggle.com/enrique1500/rental-listing-ny-map/notebook) 
 
 In this competition, you will predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
 
 The target variable, interest_level, is defined by the number of inquiries a listing has in the duration that the listing was live on the site. 
 
-###3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
+3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
 
 This is an early Exploratory Data Analysis for the Personalized Medicine: Redefining Cancer Treatment challenge. I will be using ggplot2 and the tidyverse tools to study and visualise the structures in the data.
-
 We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (so-called “drivers”) in the presence of mutations that are don’t affect the tumors (“passengers”).
 
 The data comes in 4 different files. Two csv files and two text files:
@@ -38,7 +31,8 @@ training/test text: Those contain an extensive description of the evidence that 
 The text information holds the key to the classification problem and will have to be understood/modelled well to achieve a useful accuracy.
 
 
-###4)[Countries the most mentioned by Hillary](https://www.kaggle.com/ampaho/countries-the-most-mentioned-by-hillary/code)
+4)[Countries the most mentioned by Hillary](https://www.kaggle.com/ampaho/countries-the-most-mentioned-by-hillary/code)
+
 About this Dataset
 Throughout 2015, Hillary Clinton has been embroiled in controversy over the use of personal email accounts on non-government servers during her time as the United States Secretary of State. Some political experts and opponents maintain that Clinton's use of personal email accounts to conduct Secretary of State affairs is in violation of protocols and federal laws that ensure appropriate recordkeeping of government activity. Hillary's campaign has provided their own four sentence summary of her email use here.
 
@@ -46,7 +40,7 @@ There have been a number of Freedom of Information lawsuits filed over the State
 
 The documents were released by the State Department as PDFs. We've cleaned and normalized the released documents and are hosting them for public analysis. Kaggle's choice to host this dataset is not meant to express any particular political affiliation or intent.
 
-###5)[Exploratory Analysis - NYC Taxi Trip](https://www.kaggle.com/wti200/exploratory-analysis-nyc-taxi-trip)
+5)[Exploratory Analysis - NYC Taxi Trip](https://www.kaggle.com/wti200/exploratory-analysis-nyc-taxi-trip)
 
 This is an Exploratory Data Analysis for the NYC Taxi Ride Duration competition.
 In this competition, NYC Taxi and Limousine Commission is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset includes pickup time, geo-coordinates, number of passengers, and several other variables.
