@@ -15,7 +15,6 @@ At this stage we want to understand the data that compose our Analytical Base Ta
 
 In this competition, you will predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
 
-The target variable, interest_level, is defined by the number of inquiries a listing has in the duration that the listing was live on the site. 
 
 3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
 
@@ -24,7 +23,7 @@ We have been challenged to automatically classify genetic mutations that contrib
 
 The data comes in 4 different files. Two csv files and two text files:
 
-training/test variants: These are csv catalogues of the gene mutations together with the target value Class, which is the (manually) classified assessment of the mutation. The feature variables are Gene, the specific gene where the mutation took place, and Variation, the nature of the mutation. The test data of course doesn’t have the Class values. This is what we have to predict. These two files each are linked through an ID variable to another file each, namely:
+training/test variants: These are csv catalogues of the gene mutations together with the target value Class, which is the (manually) classified assessment of the mutation. The feature variables are Gene, the specific gene where the mutation took place, and Variation, the nature of the mutation. The test data of course doesn’t have the Class values. This is what we have to predict. These two files each are linked through an ID variable to another file each, namely
 
 training/test text: Those contain an extensive description of the evidence that was used (by experts) to manually label the mutation classes.
 
@@ -34,11 +33,10 @@ The text information holds the key to the classification problem and will have t
 4)[Countries the most mentioned by Hillary](https://www.kaggle.com/ampaho/countries-the-most-mentioned-by-hillary/code)
 
 About this Dataset
-Throughout 2015, Hillary Clinton has been embroiled in controversy over the use of personal email accounts on non-government servers during her time as the United States Secretary of State. Some political experts and opponents maintain that Clinton's use of personal email accounts to conduct Secretary of State affairs is in violation of protocols and federal laws that ensure appropriate recordkeeping of government activity. Hillary's campaign has provided their own four sentence summary of her email use here.
+Throughout 2015, Hillary Clinton has been embroiled in controversy over the use of personal email accounts on non-government servers during her time as the United States Secretary of State. Some political experts and opponents maintain that Clinton use of personal email accounts to conduct Secretary of State affairs is in violation of protocols and federal laws that ensure appropriate recordkeeping of government activity. Hillary campaign has provided their own four sentence summary of her email use here.
 
-There have been a number of Freedom of Information lawsuits filed over the State Department's failure to fully release the emails sent and received on Clinton's private accounts. On Monday, August 31, the State Department released nearly 7,000 pages of Clinton's heavily redacted emails (its biggest release of emails to date).
+There have been a number of Freedom of Information lawsuits filed over the State Department failure to fully release the emails sent and received on Clinton private accounts. On Monday, August 31, the State Department released nearly 7,000 pages of Clinton heavily redacted emails (its biggest release of emails to date).
 
-The documents were released by the State Department as PDFs. We've cleaned and normalized the released documents and are hosting them for public analysis. Kaggle's choice to host this dataset is not meant to express any particular political affiliation or intent.
 
 5)[Exploratory Analysis - NYC Taxi Trip](https://www.kaggle.com/wti200/exploratory-analysis-nyc-taxi-trip)
 
