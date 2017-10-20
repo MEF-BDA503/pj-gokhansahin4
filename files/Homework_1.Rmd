@@ -7,50 +7,48 @@ author: Gokhan Sahin - BDA 503 - Fall 2017
 library(knitr)
 opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
 ```
-###1)[Forest Fires Data Set](https://archive.ics.uci.edu/ml/datasets/forest+fires)
- In [Cortez and Morais, 2007], the output 'area' was first transformed with a ln(x+1) function. 
-Then, several Data Mining methods were applied. After fitting the models, the outputs were 
-post-processed with the inverse of the ln(x+1) transform. Four different input setups were 
-used. The experiments were conducted using a 10-fold (cross-validation) x 30 runs. Two 
-regression metrics were measured: MAD and RMSE. A Gaussian support vector machine (SVM) fed 
-with only 4 direct weather conditions (temp, RH, wind and rain) obtained the best MAD value: 
-12.71 +- 0.01 (mean and confidence interval within 95% using a t-student distribution). The 
-best RMSE was attained by the naive mean predictor. An analysis to the regression error curve 
-(REC) shows that the SVM model predicts more examples within a lower admitted error. In effect, 
-the SVM model predicts better small fires, which are the majority.
+###1)[HR analytics](https://www.kaggle.com/ludobenistant/hr-analytics-1/code)
+ Our example concerns a big company that wants to understand why some of their best and most experienced employees are leaving prematurely. The company also wishes to predict which valuable employees will leave next.
+At this stage we want to understand the data that compose our Analytical Base Table (ABT) and assess where the quality of it might suffer.
+
 ```{r,echo=FALSE,eval=FALSE}
 rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="pdf_document")
 rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="html_document")
 ```
 
 
-###2)[Gas sensor array under flow modulation Data Set](http://archive.ics.uci.edu/ml/datasets/Gas+sensor+array+under+flow+modulation) 
+###2)[Rental Listing NY Map](https://www.kaggle.com/enrique1500/rental-listing-ny-map/notebook) 
+
+In this competition, you will predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
+
+The target variable, interest_level, is defined by the number of inquiries a listing has in the duration that the listing was live on the site. 
+
+###3)[Personalised Medicine - EDA with tidy R](https://www.kaggle.com/headsortails/personalised-medicine-eda-with-tidy-r)
+
+This is an early Exploratory Data Analysis for the Personalized Medicine: Redefining Cancer Treatment challenge. I will be using ggplot2 and the tidyverse tools to study and visualise the structures in the data.
+
+We have been challenged to automatically classify genetic mutations that contribute to cancer tumor growth (so-called ìdriversî) in the presence of mutations that are donít affect the tumors (ìpassengersî).
+
+The data comes in 4 different files. Two csv files and two text files:
+
+training/test variants: These are csv catalogues of the gene mutations together with the target value Class, which is the (manually) classified assessment of the mutation. The feature variables are Gene, the specific gene where the mutation took place, and Variation, the nature of the mutation. The test data of course doesnít have the Class values. This is what we have to predict. These two files each are linked through an ID variable to another file each, namely:
+
+training/test text: Those contain an extensive description of the evidence that was used (by experts) to manually label the mutation classes.
+
+The text information holds the key to the classification problem and will have to be understood/modelled well to achieve a useful accuracy.
 
 
-This data set contains 13,910 measurements from 16 chemical sensors exposed to 6 gases at different concentration levels. This dataset is an extension of the Gas Sensor Array Drift Dataset ([Web Link]), providing now the information about the concentration level at which the sensors were exposed for each measurement. The primary purpose of making this dataset freely accessible on-line is to provide an extensive dataset to the sensor and artificial intelligence research communities to develop and test strategies to solve a wide variety of tasks, including sensor drift, classification, regression, among others. 
+###4)[Countries the most mentioned by Hillary](https://www.kaggle.com/ampaho/countries-the-most-mentioned-by-hillary/code)
+About this Dataset
+Throughout 2015, Hillary Clinton has been embroiled in controversy over the use of personal email accounts on non-government servers during her time as the United States Secretary of State. Some political experts and opponents maintain that Clinton's use of personal email accounts to conduct Secretary of State affairs is in violation of protocols and federal laws that ensure appropriate recordkeeping of government activity. Hillary's campaign has provided their own four sentence summary of her email use here.
 
-The dataset can be used exclusively for research purposes. Commercial purposes are fully excluded. Citation of both Vergara et al. 'Chemical gas sensor drift compensation using classifier ensembles' and Rodriguez-Lujan et al. ‚ÄúOn the calibration of sensor arrays for pattern recognition using the minimal number of experiments‚Äù is required (see below). 
+There have been a number of Freedom of Information lawsuits filed over the State Department's failure to fully release the emails sent and received on Clinton's private accounts. On Monday, August 31, the State Department released nearly 7,000 pages of Clinton's heavily redacted emails (its biggest release of emails to date).
 
-The dataset was gathered during the period of January 2008 to February 2011 (36 months) in a gas delivery platform facility situated at the ChemoSignals Laboratory in the BioCircuits Institute, University of California San Diego. The measurement system platform provides versatility for obtaining the desired concentrations of the chemical substances of interest with high accuracy and in a highly reproducible manner, minimizing thereby the common mistakes caused by human intervention and making it possible to exclusively concentrate on the chemical sensors. See reference 1 for more details on the experimental setup. 
+The documents were released by the State Department as PDFs. We've cleaned and normalized the released documents and are hosting them for public analysis. Kaggle's choice to host this dataset is not meant to express any particular political affiliation or intent.
 
-The resulting dataset comprises recordings from six distinct pure gaseous substances, namely Ammonia, Acetaldehyde, Acetone, Ethylene, Ethanol, and Toluene, dosed at a wide variety of concentration levels in the intervals (50,1000), (5,500), (12,1000), (10,300), (10,600), and (10,100) ppmv, respectively.
+###5)[Exploratory Analysis - NYC Taxi Trip](https://www.kaggle.com/wti200/exploratory-analysis-nyc-taxi-trip)
 
-###3)[Heart Disease](http://archive.ics.uci.edu/ml/datasets/Heart+Disease)
+This is an Exploratory Data Analysis for the NYC Taxi Ride Duration competition.
+In this competition, NYC Taxi and Limousine Commission is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset includes pickup time, geo-coordinates, number of passengers, and several other variables.
 
-This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them. In particular, the Cleveland database is the only one that has been used by ML researchers to 
-this date. The "goal" field refers to the presence of heart disease in the patient. It is integer valued from 0 (no presence) to 4. Experiments with the Cleveland database have concentrated on simply attempting to distinguish presence (values 1,2,3,4) from absence (value 0). 
-
-The names and social security numbers of the patients were recently removed from the database, replaced with dummy values. 
-
-One file has been "processed", that one containing the Cleveland database. All four unprocessed files also exist in this directory. 
-
-To see Test Costs (donated by Peter Turney), please see the folder "Costs"
-
-
-###4)[Madelon Data Set ](http://archive.ics.uci.edu/ml/datasets/Madelon)
-
-MADELON is an artificial dataset containing data points grouped in 32 clusters placed on the vertices of a five dimensional hypercube and randomly labeled +1 or -1. The five dimensions constitute 5 informative features. 15 linear combinations of those features were added to form a set of 20 (redundant) informative features. Based on those 20 features one must separate the examples into the 2 classes (corresponding to the +-1 labels). We added a number of distractor feature called 'probes' having no predictive power. The order of the features and patterns were randomized. 
-
-###5)[Mushroom Data Set  ](http://archive.ics.uci.edu/ml/datasets/Mushroom)
-
-This data set includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family (pp. 500-525). Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended. This latter class was combined with the poisonous one. The Guide clearly states that there is no simple rule for determining the edibility of a mushroom; no rule like ``leaflets three, let it be'' for Poisonous Oak and Ivy.
+The data comes in the shape of 1.5 million training observations and 63k test observation. Where each row contains one taxi trip.
