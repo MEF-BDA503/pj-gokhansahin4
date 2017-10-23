@@ -1,0 +1,59 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
+# Introduction 
+This dataset is simulated  <br/>
+* Fields in the dataset include: <br/>
+* Employee satisfaction level (satisfaction_level) <br/>
+* Last evaluation (last_evaluation) <br/>
+* Number of projects (number_project) <br/>
+* Average monthly hours (average_montly_hours) <br/>
+* Time spent at the company (time_spend_company) <br/>
+* Whether they have had a work accident (Work_accident) <br/>
+* Whether they have had a promotion in the last 5 years <br/> (promotion_last_5years)
+* Sales (sales) <br/>
+* Salary (salary) <br/>
+* Whether the employee has left (left) <br/>
+
+```{r, echo=F, message=F, warning=F}
+hr = read.table('D:/HR_comma_sep.csv', header = T,sep=',')
+```
+
+
+```{r, echo=F, message=F, warning=F}
+# Library needed:
+str(hr)
+```
+
+
+
+```{r , fig.width=4, fig.height=4}
+hr$sales<-as.factor(hr$sales)
+hr$salary<-as.factor(hr$salary)
+hr$salary<-ordered(hr$salary,levels=c("low","medium","high"))
+```
+
+```{r , fig.width=4, fig.height=4}
+library(corrplot)
+cor(hr[,1:8])
+corrplot(cor(hr[,1:8]), method="circle")
+```
+
+
+
+
+
+
+
+
