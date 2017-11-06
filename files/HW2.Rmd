@@ -27,24 +27,39 @@ hr = read.table('D:/HR_comma_sep.csv', header = T,sep=',')
 ```
 
 
-```{r, echo=F, message=F, warning=F}
-# Library needed:
+
+```{r}
 str(hr)
+
+```
+
+```{r, echo=F, message=F, warning=F}
+
+library('tidyverse')
+
+SM_last_evaluation <-hr %>% group_by(salary)  %>% summarise(Average_last_evaluation=mean(last_evaluation))
+
+ggplot(data=SM_last_evaluation,aes(x=salary,y=Average_last_evaluation)) + geom_bar(stat="identity",fill="#00FF84")
+
+
+```
+
+```{r}
+montly_hours <-hr %>% group_by(salary)  %>% summarise(Sum_Montly_Hours=sum(average_montly_hours))
+
+ggplot(data=montly_hours,aes(x=salary,y=Sum_Montly_Hours)) + geom_bar(stat="identity",fill="#00FF84")
+
+```
+
+```{r}
+SM_satisfaction_level <-hr %>% group_by(sales)  %>% summarise(sumsales=mean(satisfaction_level))
+
+ggplot(data=SM_satisfaction_level,aes(x=sales,y=sumsales)) + geom_bar(stat="identity",fill="#00FF84")
 ```
 
 
 
-```{r , fig.width=4, fig.height=4}
-hr$sales<-as.factor(hr$sales)
-hr$salary<-as.factor(hr$salary)
-hr$salary<-ordered(hr$salary,levels=c("low","medium","high"))
-```
 
-```{r , fig.width=4, fig.height=4}
-library(corrplot)
-cor(hr[,1:8])
-corrplot(cor(hr[,1:8]), method="circle")
-```
 
 
 
